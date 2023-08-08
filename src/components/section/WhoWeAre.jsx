@@ -1,5 +1,5 @@
 const WhoWeAre = () => {
-  return <h2>WhoWeAre</h2>;
+  return <section>WhoWeAre</section>;
 };
 
 export default WhoWeAre;

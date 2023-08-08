@@ -1,5 +1,5 @@
 const ChooseUs = () => {
-  return <h2>ChooseUs</h2>;
+  return <section>ChooseUs</section>;
 };
 
 export default ChooseUs;

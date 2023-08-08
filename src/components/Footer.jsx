@@ -1,7 +1,14 @@
 const Footer = () => {
   return (
-    <footer>
-      <h2>Footer</h2>
+    <footer
+      id="contacts"
+      className="px-5 py-14 h-[856px] bg-contact-us bg-no-repeat bg-center bg-cover"
+    >
+      <div>
+        <h2>
+          Contact <span>us</span>
+        </h2>
+      </div>
     </footer>
   );
 };

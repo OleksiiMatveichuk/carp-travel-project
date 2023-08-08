@@ -1,10 +1,13 @@
 import Layout from "@/components/Layout";
+import Hero from "@/components/section/Hero";
+import WeOffer from "@/components/section/WeOffer";
 
 export default function Home() {
   return (
     <Layout>
       <main className="">
-        <h1>hello</h1>
+        <Hero />
+        <WeOffer/>
       </main>
     </Layout>
   );
