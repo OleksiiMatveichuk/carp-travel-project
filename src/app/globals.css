@@ -8,9 +8,13 @@
   --btn-bg-color: rgba(255, 255, 255, 0.10);
   --btn-hover-bg-color: rgba(255, 255, 255, 0.20);
   --bg-hero-img: url('../images/mobile/hero-bg.jpg');
-  --bg-we-offer-img: url('../images/mobile/offer-1-bg.jpg');
+  --bg-we-offer-1-img: url('../images/mobile/offer-1-bg.jpg');
+  --bg-we-offer-2-img: url('../images/mobile/offer-2-bg.jpg');
+  --bg-we-offer-3-img: url('../images/mobile/offer-3-bg.jpg');
+  --bg-we-offer-4-img: url('../images/mobile/offer-4-bg.jpg');
+  --bg-we-offer-5-img: url('../images/mobile/offer-5-bg.jpg');
   --bg-contact-us-img: url('../images/mobile/contact_us-bg.jpg');
-  --bg-light:rgba(2, 15, 8, 0.50);
+  --bg-light: linear-gradient(rgba(2, 15, 8, 0.50), rgba(2, 15, 8, 0.50));
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -21,6 +25,18 @@
   }
 } */
 
+@media screen and (min-width: 1280px) {
+  :root {
+    --bg-hero-img: url('../images/desctop/hero-bg.jpg');
+    --bg-we-offer-1-img: url('../images/desctop/offer-1-bg.jpg');
+    --bg-we-offer-2-img: url('../images/desctop/offer-2-bg.jpg');
+    --bg-we-offer-3-img: url('../images/desctop/offer-3-bg.jpg');
+    --bg-we-offer-4-img: url('../images/desctop/offer-4-bg.jpg');
+    --bg-we-offer-5-img: url('../images/desctop/offer-5-bg.jpg');
+    --bg-contact-us-img: url('../images/desctop/contact_us-bg.jpg');
+    }
+}
+
 body {
   color: var(--text-color);
   background: var(--default-bg-color);
@@ -30,16 +46,20 @@ body {
 
 }
 
-h1,h2 {
+h2 {
   font-size: 40px;
   font-weight: 100;
-  line-height: 1.4;
   letter-spacing: -1.6px;
   text-transform: uppercase;
 }
 
-h1>span,
 h2>span {
   font-weight: 500;
 }
 
+h1{
+  font-size: 37px;
+  font-weight: 100;
+  line-height: normal;
+  text-transform: uppercase;
+}

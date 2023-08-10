@@ -32,18 +32,26 @@ const Header = () => {
       </button>
       <div
         className={`${
-          menu ? "block" : "hidden"
-        } bg-menu-bg backdrop-blur-[25px] w-[320px] h-screen absolute top-0 right-0 `}
+          menu ? "flex" : "hidden"
+        } bg-menu-bg backdrop-blur-[25px] w-screen h-screen absolute top-0 right-0 items-center justify-center`}
       >
-        <button onClick={handleClick} type="button">
+        <button
+          onClick={handleClick}
+          className="absolute top-[43px] right-[20px] font-normal uppercase"
+          type="button"
+        >
           Close
         </button>
-        <ul>
+        <ul className="flex flex-col gap-10 font-normal text-lg">
           <li>
-            <a href="#services">Services</a>
+            <a onClick={handleClick} href="#services">
+              Services
+            </a>
           </li>
           <li>
-            <a href="#contacts">Contacts</a>
+            <a onClick={handleClick} href="#contacts">
+              Contacts
+            </a>
           </li>
         </ul>
       </div>
