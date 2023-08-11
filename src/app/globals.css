@@ -15,6 +15,8 @@
   --bg-we-offer-5-img: url('../images/mobile/offer-5-bg.jpg');
   --bg-contact-us-img: url('../images/mobile/contact_us-bg.jpg');
   --bg-light: linear-gradient(rgba(2, 15, 8, 0.50), rgba(2, 15, 8, 0.50));
+  --bg-darck: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75));
+
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -43,6 +45,7 @@ body {
   font-size: 14px;
   font-weight: 200;
   line-height: 1.4;
+  @apply md:text-[16px]/[20px]
 
 }
 
@@ -62,4 +65,15 @@ h1{
   font-weight: 100;
   line-height: normal;
   text-transform: uppercase;
+}
+
+
+
+@layer components{
+
+  .message-invalid { @apply absolute bottom-[-24px] right-0 text-[12px]/[24px] tracking-[2.4px]}
+
+  .foreword-message {@apply before:absolute before:left-[-18px] before:bottom-[11px] before:w-3.5 before:h-px before:bg-input-error before:rotate-45 after:absolute after:left-[-18px] after:bottom-[11px] after:w-3.5 after:h-px after:bg-input-error after:rotate-[-45deg]} 
+
+  .offer-active {@apply font-medium opacity-100 pl-4 before:bg-white before:absolute before:left-0 before:top-1 before:w-2 before:h-2 before:rotate-45 !important;}
 }

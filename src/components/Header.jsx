@@ -15,43 +15,53 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-between items-center fixed top-0 left-0 right-0 h-[105px] px-5 bg-transparent z-10">
-      <Image
-        className="h-[33px]"
-        src={logo}
-        width={61}
-        height={33}
-        alt="logo"
-      />
-      <button
-        onClick={handleClick}
-        type="button"
-        className="uppercase font-normal"
-      >
-        Menu
-      </button>
-      <div
-        className={`${
-          menu ? "flex" : "hidden"
-        } bg-menu-bg backdrop-blur-[25px] w-screen h-screen absolute top-0 right-0 items-center justify-center`}
-      >
+    <header className="flex items-center justify-center fixed top-0 left-0 right-0 h-[105px] px-5 bg-transparent z-10 md:px-8 md:py-16">
+      <div className="flex justify-between items-center w-full max-w-[440px] md:max-w-[1216px]">
+        <Image
+          className="h-[33px]"
+          src={logo}
+          width={61}
+          height={33}
+          alt="logo"
+        />
         <button
           onClick={handleClick}
-          className="absolute top-[43px] right-[20px] font-normal uppercase"
           type="button"
+          className="uppercase font-normal md:hidden"
         >
-          Close
+          Menu
         </button>
-        <ul className="flex flex-col gap-10 font-normal text-lg">
+        <div
+          className={`${
+            menu ? "flex" : "hidden"
+          } bg-menu-bg backdrop-blur-[25px] w-screen h-screen absolute top-0 right-0 items-center justify-center`}
+        >
+          <button
+            onClick={handleClick}
+            className="absolute top-[43px] right-[20px] font-normal uppercase"
+            type="button"
+          >
+            Close
+          </button>
+          <ul className="flex flex-col gap-10 font-normal text-lg">
+            <li>
+              <a onClick={handleClick} href="#services">
+                Services
+              </a>
+            </li>
+            <li>
+              <a onClick={handleClick} href="#contacts">
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul className="hidden md:flex gap-6 font-normal text-sm">
           <li>
-            <a onClick={handleClick} href="#services">
-              Services
-            </a>
+            <a href="#services">Services</a>
           </li>
           <li>
-            <a onClick={handleClick} href="#contacts">
-              Contacts
-            </a>
+            <a href="#contacts">Contacts</a>
           </li>
         </ul>
       </div>
