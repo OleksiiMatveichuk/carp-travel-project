@@ -3,12 +3,6 @@ import Image from "next/image";
 import data from "../../data/weOffer.js";
 import { useState } from "react";
 
-// import "animate.css";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import { EffectFade, Virtual } from "swiper/modules";
-// import "swiper/css/effect-fade";
-
 const bg = [
   "bg-we-offer-1",
   "bg-we-offer-2",
@@ -31,10 +25,10 @@ const WeOffer = () => {
   return (
     <section
       id="services"
-      className={`min-h-[851px] ${bg[index]} bg-no-repeat bg-center bg-cover transition-all duration-300 relative md:min-h-[600px]`}
+      className={`min-h-[851px] ${bg[index]} bg-no-repeat bg-center bg-cover transition-all duration-300 relative md:min-h-[600px] xl:min-h-screen`}
     >
-      <div className="w-full min-h-full flex justify-center px-5 py-14 bg-offer md:px-8 md:py-16">
-        <div className="flex flex-col h-full max-w-[440px] md:max-w-[1216px] md:h-full">
+      <div className="w-full min-h-full flex justify-center px-5 py-14 bg-offer md:px-8 md:py-16 xl:px-[104px] xl:py-[104px]">
+        <div className="flex flex-col h-full max-w-[440px] md:max-w-[1216px] md:h-full xl:max-w-[1600px]">
           <div className="flex flex-col gap-6 mb-4 md:flex-row md:justify-between md:mb-9">
             <h2>
               We <span>offer</span>

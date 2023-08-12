@@ -19,9 +19,9 @@ const Footer = () => {
   return (
     <footer
       id="contacts"
-      className="flex justify-center px-5 py-14 min-h-[856px] bg-contact-us bg-no-repeat bg-center bg-cover md:px-8 md:py-16 md:min-h-[660px]"
+      className="flex justify-center px-5 py-14 min-h-[856px] bg-contact-us bg-no-repeat bg-center bg-cover md:px-8 md:py-16 md:min-h-[660px] xl:px-[104px] xl:py-[104px] xl:min-h-screen"
     >
-      <div className="max-w-[440px] md:max-w-[1216px] md:flex md:flex-col md:justify-between">
+      <div className="max-w-[440px] md:max-w-[1216px] md:flex md:flex-col md:justify-between xl:max-w-[1600px]">
         <h2 className="mb-9">
           Contact <span>us</span>
         </h2>
