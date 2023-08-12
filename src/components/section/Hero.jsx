@@ -3,7 +3,7 @@ import BtnJoin from "../BtnJoin";
 const Hero = () => {
   return (
     <section className="flex justify-center items-end px-5 py-14 bg-hero bg-no-repeat bg-center bg-cover min-h-[642px] md:px-8 md:py-16 md:min-h-[500px]">
-      <div className="h-full flex flex-col gap-[24px] justify-end max-w-[440px] md:max-w-[1216px] md:flex-row md:gap-12 ">
+      <div className="h-full flex flex-col gap-[24px] justify-end max-w-[440px] md:max-w-[1216px] md:flex-row md:justify-between ">
         <h1 className="font-thin tracking-[1.6px] relative self-end md:hidden">
           <span className="font-medium">7</span>days
           <br />
