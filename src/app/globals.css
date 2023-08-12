@@ -27,6 +27,17 @@
   }
 } */
 
+@media screen and (min-width: 768px) {
+  :root {
+    --bg-hero-img: url('../images/tablet/hero-bg.jpg');
+    --bg-we-offer-1-img: url('../images/tablet/offer-1-bg.jpg');
+    --bg-we-offer-2-img: url('../images/tablet/offer-2-bg.jpg');
+    --bg-we-offer-3-img: url('../images/tablet/offer-3-bg.jpg');
+    --bg-we-offer-4-img: url('../images/tablet/offer-4-bg.jpg');
+    --bg-we-offer-5-img: url('../images/tablet/offer-5-bg.jpg');
+    --bg-contact-us-img: url('../images/tablet/contact_us.jpg');
+    }
+}
 @media screen and (min-width: 1280px) {
   :root {
     --bg-hero-img: url('../images/desctop/hero-bg.jpg');
@@ -54,6 +65,7 @@ h2 {
   font-weight: 100;
   letter-spacing: -1.6px;
   text-transform: uppercase;
+  @apply md:text-[67px] md:tracking-[-2.68px]
 }
 
 h2>span {
@@ -65,6 +77,7 @@ h1{
   font-weight: 100;
   line-height: normal;
   text-transform: uppercase;
+  @apply md:text-[67px] md:tracking-[8.71px]
 }
 
 
